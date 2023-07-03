@@ -420,12 +420,8 @@ textarea {
   .wrapper {
     max-width: 1060px;
     margin: 0 auto;
-<<<<<<< HEAD
-    /* padding: 0 15px; */
-=======
     padding: 0 15px;
 
->>>>>>> dev
     /* padding-bottom: 222.97px; */
   }
 
@@ -525,11 +521,7 @@ textarea {
  /* intro start */
 
  .intro {
-<<<<<<< HEAD
-    min-height: 100vh;
-=======
     min-height: 100%;
->>>>>>> dev
     background: url(../img/intro_bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -880,11 +872,7 @@ textarea {
 /* set the gaps in the tour2 info card */
 
 .tour2 .tour_info .tour_title {
-<<<<<<< HEAD
-  width: 357px;
-=======
   /* width: 357px; */
->>>>>>> dev
   margin-bottom: 45px;
 }
 
@@ -1060,19 +1048,6 @@ textarea {
 /* media start */
 
 @media screen and (max-width: 1090px) {
-<<<<<<< HEAD
-  .wrapper {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (max-width: 925px) {
-  .search_form_field {
-    padding-bottom: 22px;
-    background: transparent url(../img/svg/circle_icon.svg) no-repeat left top;
-  }
-}
-=======
 
   body {
     overflow-x: hidden;
@@ -1084,7 +1059,6 @@ textarea {
   }
 
 
->>>>>>> dev
 
 @media screen and (max-width: 960px) {
 
@@ -1092,13 +1066,10 @@ textarea {
     padding-bottom: 0;
   }
 
-<<<<<<< HEAD
-=======
   .search_form {
     padding-bottom: 194px;
   }
 
->>>>>>> dev
   .search_form_field {
     margin-bottom: 25px;
   }
@@ -1191,8 +1162,6 @@ textarea {
 }
 
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 925px) {
   .search_form_field {
     padding-bottom: 22px;
@@ -1201,7 +1170,6 @@ textarea {
 }
 
 
->>>>>>> dev
 @media screen and (max-width: 767px) {
   
   .header {
