@@ -420,7 +420,8 @@ textarea {
   .wrapper {
     max-width: 1060px;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 15px;
+
     /* padding-bottom: 222.97px; */
   }
 
@@ -520,7 +521,7 @@ textarea {
  /* intro start */
 
  .intro {
-    min-height: 100vh;
+    min-height: 100%;
     background: url(../img/intro_bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -871,7 +872,7 @@ textarea {
 /* set the gaps in the tour2 info card */
 
 .tour2 .tour_info .tour_title {
-  width: 357px;
+  /* width: 357px; */
   margin-bottom: 45px;
 }
 
@@ -1047,17 +1048,17 @@ textarea {
 /* media start */
 
 @media screen and (max-width: 1090px) {
-  .wrapper {
-    padding: 0 20px;
-  }
-}
 
-@media screen and (max-width: 925px) {
-  .search_form_field {
-    padding-bottom: 22px;
-    background: transparent url(../img/svg/circle_icon.svg) no-repeat left top;
+  body {
+    overflow-x: hidden;
+  }  
+
+  /* .wrapper_1090 {
+    padding-left: 20px;
+    padding-right: 20px; */
   }
-}
+
+
 
 @media screen and (max-width: 960px) {
 
@@ -1161,6 +1162,14 @@ textarea {
 }
 
 
+@media screen and (max-width: 925px) {
+  .search_form_field {
+    padding-bottom: 22px;
+    background: transparent url(../img/svg/circle_icon.svg) no-repeat left top;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   
   .header {
@@ -1233,9 +1242,206 @@ textarea {
     transform: translateX(-50%);
     transform: rotate(-45deg);
   }
-
-   
 }
+
+@media screen and (max-width: 696px) {
+
+  .footer {
+    padding: 47px 0;
+}
+
+
+.footer_item {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer_logo {
+  width: 30%;
+  padding-bottom: 25px;
+
+  
+}
+
+.footer_nav {
+  width: 100%;
+}
+
+  .footer_menu {
+    margin-right: 10px;
+  }
+
+  .footer_nav:last-child {
+    margin-right: 0px;
+  }
+}
+  @media screen and (max-width: 690px) {
+    .places {
+      margin-bottom: 40px;
+    }
+
+    .tour1 {
+      margin-bottom: -28px;
+    }
+  }
+
+  @media screen and (max-width: 634px) {
+    .places_caption {
+      row-gap: 16px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 582px) {
+
+    .intro {
+      padding-top: 200px;
+    }
+
+    .benefits {
+      margin-bottom: 30px;
+    }
+
+    .benefits_cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .benefits_card {
+      display: grid;
+      column-gap: 10px;
+      grid-template-columns: 2fr 5fr;
+      grid-template-areas: 
+          '. title'
+          'pic desc'
+          'pic link';
+      margin-bottom: 0;
+    }
+
+    .benefits_card_pic {
+      grid-area: pic;
+      margin: 0 auto;
+    }
+
+    .benefits_card_title {
+      grid-area: title;
+      margin-bottom: 16px;
+    }
+
+    .benefits_card_desc {
+      grid-area: desc;
+      margin-bottom: 6px;
+    }
+
+    .benefits_card_more {
+      grid-area: link;
+      margin-bottom: 45px;
+      padding-right: 48px;
+      width: 151px;
+    }
+
+    .tours_wrap {
+      display: flex;
+      flex-wrap: wrap;
+      /* grid-template-columns: 1fr 1fr; */
+      row-gap: 10px;
+    }
+
+    .tour1 {
+      margin-bottom: 44px;
+    }
+
+    .tour1, .tour2 {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+    }
+
+    .tour2 .tour_pic {
+      order: 0;
+    }
+
+    .tour_pic img {
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .tour_more {
+      padding: auto 0 0 0;
+    }
+
+    .tour_info {
+      height: 100%;
+    }
+
+    .top_cards {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 30px;
+    }
+
+    .top_card {
+      grid-column: span 2;
+    }
+
+    .top_card_pic {
+      margin-bottom: 18px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .top_card_stats {
+      justify-content: flex-start;
+      padding: 10px 16px;
+
+    }
+
+    .top_card_title {
+      flex-basis: 100%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 410px){
+
+    /* .benefits_cards {
+      display: flex;
+      flex-direction: column;
+    } */
+
+    .top_cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .top_card {
+      grid-column: span 3;
+    }
+
+    .top_card_stats {
+      justify-content: flex-end;
+
+    }
+
+    .top_card_title {
+      flex-basis: initial;
+    }
+  }
+
+  @media screen and (max-width: 246px) {
+    .top_card_stats {
+      justify-content: flex-start;
+      padding: 10px 16px;
+
+    }
+
+    .top_card_title {
+      flex-basis: 100%;
+    }
+
+
+  }
+
 
 
 
