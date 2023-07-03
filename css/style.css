@@ -420,7 +420,7 @@ textarea {
   .wrapper {
     max-width: 1060px;
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     /* padding-bottom: 222.97px; */
   }
 
@@ -1045,6 +1045,13 @@ textarea {
 /* footer end */
 
 /* media start */
+
+@media screen and (max-width: 1090px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 925px) {
   .search_form_field {
     padding-bottom: 22px;
