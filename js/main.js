@@ -16,13 +16,31 @@
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.header_nav');
     const buttonClose = document.querySelector('.header_nav_close');
+    const menuArticle = document.querySelector('.header_article');
+    const menuLocations = document.querySelector('.header_locations');
+    const menuVideos = document.querySelector('.header_videos');
+    const menuSign = document.querySelector('.header_signing');
     
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header_nav_active');
     });
+
+    menuArticle.addEventListener('click', () => {
+        menu.classList.remove('header_nav_active');
+    });
+    menuLocations.addEventListener('click', () => {
+        menu.classList.remove('header_nav_active');
+    });
+    menuVideos.addEventListener('click', () => {
+        menu.classList.remove('header_nav_active');
+    });
+    menuSign.addEventListener('click', () => {
+        menu.classList.remove('header_nav_active');
+    });
+
     buttonClose.addEventListener('click', () => {
         menu.classList.remove('header_nav_active');
-    })
+    });
 
 }());
 

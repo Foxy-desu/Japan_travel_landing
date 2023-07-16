@@ -522,7 +522,7 @@ textarea {
 
  .intro {
     min-height: 100%;
-    background: url(../img/intro_bg.jpg) no-repeat center;
+    background: url(../img/intro_bg-min.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 373px;
@@ -1032,7 +1032,7 @@ textarea {
 }
 
 .footer_menu_link {
-  color: #FFF;
+  color: #ffffffea;
   text-decoration: none;
   font-weight: normal;
   font-size: 16px;
@@ -1425,6 +1425,12 @@ textarea {
 
     .top_card_title {
       flex-basis: initial;
+    }
+  }
+
+  @media screen and (max-width: 332px) {
+  .footer_nav:last-child {
+      gap: 25px;
     }
   }
 
